@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andre Asaoka - Nutricionista</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -22,7 +21,7 @@
             align-items: center;
         }
 
-        header, footer {
+        header {
             background-color: #333;
             color: #fff;
             width: 100%;
@@ -32,42 +31,23 @@
 
         header .header-content {
             display: flex;
-            align-items: center;
             justify-content: center;
+            gap: 30px;
         }
 
-        header .header-content img {
-            width: 50px;
-            height: 50px;
-            margin-right: 15px;
-        }
-
-        nav {
-            background-color: #a1a1a1;
-            width: 100%;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            padding: 0;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
+        header .header-content a {
             color: #fff;
             text-decoration: none;
+            font-weight: bold;
             padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        nav ul li a:hover {
-            background-color: #555;
+        header .header-content a:hover {
+            background-color: #fff;
+            color: #333;
         }
 
         main {
@@ -75,71 +55,39 @@
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-        }
-
-        .section-content {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .section-content h2 {
-            margin-bottom: 20px;
-        }
-
-        .flex-container {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
         }
 
-        .flex-container img {
+        iframe {
             width: 100%;
-            max-width: 400px;
-            height: auto;
-            margin-bottom: 20px;
+            height: 600px;
+            border: none;
         }
 
-        .flex-container .text-right {
-            max-width: 600px;
-            text-align: justify;
-        }
-
-        .social-media {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .social-media a {
-            color: #333;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 50%;
-            font-size: 24px;
-            padding: 10px;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        .social-media a:hover {
-            background: #ddd;
+        footer {
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <a href="https://andreasaoka.github.io/meusite/" target="_blank">Meu Site</a>
+            <a href="https://andreasaoka.com" target="_blank">Meu Site</a>
             <a href="https://wa.me/5511999478135" target="_blank">WhatsApp</a>
-            <a href="https://instagram.com/andreasaoka" target="_blank">Instagram</a>
+            <a href="https://instagram.com/seuusuario" target="_blank">Instagram</a>
         </div>
     </header>
     <main>
-        <iframe src="https://my.spline.design/clockdigitalinteractioncopy-44757d81cc449d407b5d747bb30ff935/" width="100%" height="600" style="border:none;"></iframe>
+        <iframe src="URL_DO_SEU_PROJETO_SPLINE"></iframe>
     </main>
     <footer>
         <p>&copy; 2024 Andre Asaoka. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
-
