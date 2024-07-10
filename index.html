@@ -19,6 +19,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 100vh;
+            margin: 0;
         }
 
         header {
@@ -31,8 +33,8 @@
 
         header .header-content {
             display: flex;
-            justify-content: center;
-            gap: 30px;
+            justify-content: space-around;
+            gap: 20px;
         }
 
         header .header-content a {
@@ -54,16 +56,12 @@
             width: 100%;
             max-width: 1200px;
             margin: 20px auto;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             flex-grow: 1;
         }
 
         iframe {
             width: 100%;
-            height: 80vh;
+            height: 600px; /* Altura ajustável conforme necessário para o conteúdo do Spline */
             border: none;
         }
 
@@ -73,6 +71,7 @@
             width: 100%;
             text-align: center;
             padding: 1rem 0;
+            flex-shrink: 0;
         }
     </style>
 </head>
@@ -85,7 +84,7 @@
         </div>
     </header>
     <main>
-        <iframe src="https://my.spline.design/clockdigitalinteractioncopy-44757d81cc449d407b5d747bb30ff935/"></iframe>
+        <iframe src="URL_DO_SEU_PROJETO_SPLINE" allowfullscreen></iframe>
     </main>
     <footer>
         <p>&copy; 2024 Andre Asaoka. Todos os direitos reservados.</p>
