@@ -19,6 +19,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: space-between;
             min-height: 100vh;
             margin: 0;
         }
@@ -29,6 +30,7 @@
             width: 100%;
             text-align: center;
             padding: 1rem 0;
+            flex-shrink: 0;
         }
 
         header .header-content {
@@ -54,14 +56,18 @@
 
         main {
             width: 100%;
-            max-width: 1200px;
-            margin: 20px auto;
+            max-width: 100%;
             flex-grow: 1;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
         }
 
         iframe {
             width: 100%;
-            height: 600px; /* Altura ajustável conforme necessário para o conteúdo do Spline */
+            height: 100vh;
             border: none;
         }
 
