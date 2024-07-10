@@ -56,7 +56,7 @@
 
         main {
             width: 100%;
-            height: calc(100vh - 68px); /* Altura da tela menos a altura do cabeçalho */
+            min-height: calc(100vh - 68px); /* Altura mínima da tela menos a altura do cabeçalho */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -80,6 +80,14 @@
             position: fixed;
             bottom: 0;
             left: 0;
+        }
+
+        /* Media query para telas menores, como celulares */
+        @media (max-width: 600px) {
+            main {
+                min-height: calc(100vh - 88px); /* Altura mínima da tela menos a altura do cabeçalho (88px) */
+                margin-top: 88px; /* Altura do cabeçalho */
+            }
         }
     </style>
 </head>
